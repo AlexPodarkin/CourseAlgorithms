@@ -59,10 +59,12 @@ public class homeWork3_1
   
     // возвращает последний узел или хвост данного связного списка
 
-    private Node tail() {
+    private Node tail() 
+    {
       Node tail = head;
       // Находит последний элемент связного списка, известный как хвост
-      while (tail.next != null) {
+      while (tail.next != null) 
+      {
         tail = tail.next;
       }
       return tail;
@@ -70,11 +72,13 @@ public class homeWork3_1
   
     // метод возвращающий длину связного списка
 
-    public int length() {
+    public int length() 
+    {
       int length = 0;
       Node current = head;
   
-      while (current != null) {
+      while (current != null) 
+      {
         length++;
         current = current.next;
       }
@@ -83,16 +87,19 @@ public class homeWork3_1
 
     // получения n-го узла от конца
 
-    public String getLastNode(int n) {
+    public String getLastNode(int n) 
+    {
       Node fast = head;
       Node slow = head;
       int start = 1;
   
-      while (fast.next != null) {
+      while (fast.next != null) 
+      {
         fast = fast.next;
         start++;
   
-        if (start > n) {
+        if (start > n) 
+        {
           slow = slow.next;
         }
       }
@@ -101,16 +108,19 @@ public class homeWork3_1
     }
   
     @Override
-    public String toString() {
+    public String toString() 
+    {
       StringBuilder sb = new StringBuilder();
   
       Node current = head;
-      while (current != null) {
+      while (current != null) 
+      {
         sb.append(current).append("-->");
         current = current.next;
       }
   
-      if (sb.length() >= 3) {
+      if (sb.length() >= 3) 
+      {
         sb.delete(sb.length() - 3, sb.length());
   
       }

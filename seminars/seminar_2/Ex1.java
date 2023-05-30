@@ -1,4 +1,4 @@
-package seminars.seminars_2;
+package seminars.seminar_2;
 
 import java.util.Arrays;
 

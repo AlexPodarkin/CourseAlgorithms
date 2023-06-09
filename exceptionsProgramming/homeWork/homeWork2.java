@@ -104,7 +104,8 @@ public class homeWork2
         {
             try 
             {
-                double catchedRes1 = 8 / d;
+                int[] intArray = new int[10];
+                double catchedRes1 = intArray[8] / d;
                 System.out.println("catchedRes1 = " + catchedRes1);
                 break;
             } catch (ArithmeticException e) 
@@ -113,6 +114,9 @@ public class homeWork2
                 System.out.print("Введите число -> ");
                 d = sc.nextInt();
             }
+            catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Catching exception: " + e);
+        }
         }
          
     }
@@ -124,12 +128,13 @@ public class homeWork2
                 2. Дан следующий код, исправьте его там, где требуется.          
                 3. Разработайте программу, которая выбросит Exception, когда пользователь вводит пустую строку. 
                 Пользователю должно показаться сообщение, что пустые строки вводить нельзя.
-                4. TaskTest """);
+                4. TaskTest
+                5. Выход """);
 
         int checkExit = 4;
-        while (checkExit != 0) 
+        while (checkExit != 5) 
         {
-            checkExit = userInput("\nВведите номер задачи ( Для выхода нажмите 0 ) -> ");
+            checkExit = userInput("\nВведите  -> ");
             switch (checkExit) 
             {
                 case 1 -> 
